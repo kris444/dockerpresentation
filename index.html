@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+    <link rel="stylesheet" type="text/css" href="ext/css/flowtime.css">
+    <link rel="stylesheet" type="text/css" href="ext/css/themes/default.css">
+</head>
+
+<body>
+    <div class="flowtime">
+        <div class="ft-section" data-id="section-1">
+            <div class="ft-page" data-id="page-1">
+                <h1>Heading Title</h1>
+                When navigating to this page the title will be "site name | Heading Title" and the URL will be "http://site_URL/#/section-1/page-1/"
+                <p class="ft-fragment">This paragraph shows up only when you navigate forward and disappears when you navigate back.</p>
+            </div>
+             <div class="ft-page" data-id="page-2">
+                <h1>Heading Title 2</h1>
+                When navigating to this page the title will be "site name | Heading Title" and the URL will be "http://site_URL/#/section-1/page-1/"
+                <p class="ft-fragment">This paragraph shows up only when you navigate forward and disappears when you navigate back.</p>
+            </div>
+        </div>
+        <div class="ft-section" data-title="Section 2 Title" data-id="section-2">
+            <div class="ft-page" data-title="Page 1 Title" data-id="page-1">
+                When navigating to this page the title will be "site name | Section 2 Title | Page 1 Title" and the URL will be "http://site_URL/#/section-2/page-1/"
+            </div>
+        </div>
+        <div class="ft-section" data-id="section-3">
+            <div class="ft-page" data-title="Page Title" data-id="page-1">
+                When navigating to this page the title will be "site name | Page Title" and the URL will be "http://site_URL/#/section-3/page-1/"
+                <p class="parallax">Parallaxed element. Will use the default lengths.</p>
+                <p class="parallax" data-parallax="100,150">Parallaxed element. Will use the `data-parallax` attribute values.</p>
+                <p class="parallax" data-parallax="200">Parallaxed element. Will use the `data-parallax` attribute value; x and y will be the same length.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="ext/js/brav1toolbox.js"></script>
+    <script src="ext/js/flowtime.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>
